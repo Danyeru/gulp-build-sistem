@@ -1,0 +1,53 @@
+.select {
+  position: relative;
+  &.form-group{
+    margin-bottom: 15px;
+  }
+  &:after {
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 16px;
+    bottom: 13px;
+    color: $grey-dark;
+    pointer-events: none;
+    content: "\f0dd";
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-variant-caps: normal;
+    -webkit-font-variant-ligatures: normal;
+    font-variant-ligatures: normal;
+    font-weight: 900;
+    height: 18px;
+    line-height: 20px;
+    text-rendering: auto;
+    width: 9px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .custom-select {
+    border: 1px solid $grey;
+    border-radius: 0px;
+    background: #fff;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    height: auto;
+    padding: 8px 12px;
+    @include transition(all .15s ease-in-out);
+    @include font-size(14px);
+    @include line-height(18px);
+    color: $grey-dark;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    cursor: pointer;
+    &.focus {
+      -webkit-transition: all .15s ease-in-out;
+      transition: all .15s ease-in-out;
+      border-color: #FEA839;
+    }
+    &:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+}

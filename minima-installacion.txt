@@ -1,0 +1,10 @@
+Para correr el gulp automation sistem seguir los siguientes pasos:
+
+1. instalar la versión LTS de Node
+
+2. instalar npm, si Node ya está instalado en su sistema correr el siguiente comando - $ npm install -g npm@latest para instalar la última versión de NPM de esta forma se minimizan los errores.
+
+3. Para modificar la información de inicio corra el comando npm init, se recomienda que si se desean modificar los valores de inicialización con excepción con las librerías requeridas, se haga directamente desde el archivo package.json
+ 
+4. Corra el comando - $ npm install para que npm instale los paquetes de dev dependencies
+

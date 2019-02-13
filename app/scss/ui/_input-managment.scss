@@ -1,0 +1,51 @@
+.form-control {
+  padding: 8px 12px;
+  color: $grey-dark;
+  border-radius: 0px;
+  border:1px solid $grey-dark;
+  height:auto;
+  margin-bottom: 15px;
+  @include font-size(14px);
+  @include line-height(14px);
+  &[type=text] {}
+  &[type=e-mail] {}
+  &[type=number] {
+    -moz-appearance: textfield;
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  &::-webkit-input-placeholder {
+    color: $grey-dark;
+  }
+  /* WebKit, Blink, Edge */
+  &:-moz-placeholder {
+    color: $grey-dark;
+  }
+  /* Mozilla Firefox 4 to 18 */
+  &::-moz-placeholder {
+    color: $grey-dark;
+  }
+  /* Mozilla Firefox 19+ */
+  &:-ms-input-placeholder {
+    color: $grey-dark;
+  }
+  /* Internet Explorer 10-11 */
+  &::-ms-input-placeholder {
+    color: $grey-dark;
+  }
+  /* Microsoft Edge */
+  &:focus{
+    color: $grey-dark;
+    background-color:white;
+    border-color: $grey-dark;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
